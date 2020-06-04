@@ -17,4 +17,5 @@ https://dean9703111.github.io/customer_feedback_form/index.html
 參考資源：
 
 Bootstrap form templete: https://colorlib.com/wp/template/contact-form-v17/
+Bootstrap thank you page: https://codepen.io/JacobLett/pen/vyegPV
 Create websites using Google Forms: https://hackernoon.com/create-websites-using-google-forms-49a19cc8beb8

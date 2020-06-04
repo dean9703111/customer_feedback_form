@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Contact V17</title>
+	<title>餐後回饋</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--===============================================================================================-->
@@ -34,24 +34,23 @@
 
 	<div class="container-contact100">
 		<div class="wrap-contact100">
-			<form 
-			id="google-form"
-			class="contact100-form validate-form" 
-			action="https://docs.google.com/forms/d/e/1FAIpQLSeijRuLDQE62gbapDYgd_3pbmg7GyWY1CWPVeaEK-TiLDKzPw/formResponse"
-			method="POST" id="contact_form">
+			<form id="google-form" class="contact100-form validate-form"
+				action="https://docs.google.com/forms/d/e/1FAIpQLSeijRuLDQE62gbapDYgd_3pbmg7GyWY1CWPVeaEK-TiLDKzPw/formResponse"
+				method="POST" id="contact_form">
 				<span class="contact100-form-title">
 					餐後回饋
 				</span>
 
 				<label class="label-input100" for="first-name">姓名 *</label>
 				<div class="wrap-input100 validate-input" data-validate="姓名為必填">
-					<input id="first-name" class="input100" type="text" name="entry.2040133429" placeholder="王大明">
+					<input id="name" class="input100" type="text" name="entry.2040133429" placeholder="王大明">
 					<span class="focus-input100"></span>
 				</div>
 
 				<label class="label-input100" for="email">email</label>
 				<div class="wrap-input100">
-					<input id="email" class="input100" type="text" name="entry.304089069" placeholder="Eg. example@email.com">
+					<input id="email" class="input100" type="text" name="entry.304089069"
+						placeholder="Eg. example@email.com">
 					<span class="focus-input100"></span>
 				</div>
 
@@ -68,7 +67,8 @@
 
 				<label class="label-input100" for="message">您的建議</label>
 				<div class="wrap-input100" data-validate="Message is required">
-					<textarea id="message" class="input100" name="entry.1310220291" placeholder="Write us a message"></textarea>
+					<textarea id="message" class="input100" name="entry.1310220291"
+						placeholder="Write us a message"></textarea>
 					<span class="focus-input100"></span>
 				</div>
 
@@ -160,19 +160,26 @@
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
 	<script>
-		$('#google-form').submit(function(e) {
+		$('#google-form').submit(function (e) {
 			e.preventDefault();
 			console.log('yes')
 			$.ajax({
 				url: "https://docs.google.com/forms/d/e/1FAIpQLSeijRuLDQE62gbapDYgd_3pbmg7GyWY1CWPVeaEK-TiLDKzPw/formResponse",
-				data: $(this).serialize(),
-				type: "POST",
-				dataType: "xml",
-				success: function(data) {
-					console.log('Submission successful');
+				crossDomain: true,
+				data: {
+					"entry.2040133429": $('#name').val(),
+					"entry.304089069": $('#email').val(),
+					"entry.207113062": $('#score').val(),
+					"entry.1310220291": $('#message').val()
 				},
-				error: function(xhr, status, error) {
-					console.log('Submission failed: ' + error);
+				type: "POST",
+				dataType: "JSONP",
+				complete: function () {
+					$('#name').val('')
+					$('#email').val('')
+					$('#score').val('')
+					$('#message').val('')
+					window.location.replace("thank.html");
 				}
 			});
 		});
