@@ -34,26 +34,30 @@
 
 	<div class="container-contact100">
 		<div class="wrap-contact100">
-			<form class="contact100-form validate-form">
+			<form 
+			id="google-form"
+			class="contact100-form validate-form" 
+			action="https://docs.google.com/forms/d/e/1FAIpQLSeijRuLDQE62gbapDYgd_3pbmg7GyWY1CWPVeaEK-TiLDKzPw/formResponse"
+			method="POST" id="contact_form">
 				<span class="contact100-form-title">
 					餐後回饋
 				</span>
 
 				<label class="label-input100" for="first-name">姓名 *</label>
 				<div class="wrap-input100 validate-input" data-validate="姓名為必填">
-					<input id="first-name" class="input100" type="text" name="name" placeholder="王大明">
+					<input id="first-name" class="input100" type="text" name="entry.2040133429" placeholder="王大明">
 					<span class="focus-input100"></span>
 				</div>
 
 				<label class="label-input100" for="email">email</label>
 				<div class="wrap-input100">
-					<input id="email" class="input100" type="text" name="email" placeholder="Eg. example@email.com">
+					<input id="email" class="input100" type="text" name="entry.304089069" placeholder="Eg. example@email.com">
 					<span class="focus-input100"></span>
 				</div>
 
 				<label class="label-input100" for="email">評分(最高五分) *</label>
 				<div class="wrap-input100 validate-input" data-validate="煩請評分">
-					<select class="form-control" id="score" style="border: 0px;">
+					<select class="form-control" id="score" style="border: 0px;" name="entry.207113062">
 						<option>1</option>
 						<option>2</option>
 						<option>3</option>
@@ -64,7 +68,7 @@
 
 				<label class="label-input100" for="message">您的建議</label>
 				<div class="wrap-input100" data-validate="Message is required">
-					<textarea id="message" class="input100" name="message" placeholder="Write us a message"></textarea>
+					<textarea id="message" class="input100" name="entry.1310220291" placeholder="Write us a message"></textarea>
 					<span class="focus-input100"></span>
 				</div>
 
@@ -156,11 +160,22 @@
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
 	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
-
-		gtag('config', 'UA-23581568-13');
+		$('#google-form').submit(function(e) {
+			e.preventDefault();
+			console.log('yes')
+			$.ajax({
+				url: "https://docs.google.com/forms/d/e/1FAIpQLSeijRuLDQE62gbapDYgd_3pbmg7GyWY1CWPVeaEK-TiLDKzPw/formResponse",
+				data: $(this).serialize(),
+				type: "POST",
+				dataType: "xml",
+				success: function(data) {
+					console.log('Submission successful');
+				},
+				error: function(xhr, status, error) {
+					console.log('Submission failed: ' + error);
+				}
+			});
+		});
 	</script>
 </body>
 
