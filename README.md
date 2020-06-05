@@ -7,13 +7,11 @@
 後端:Google Form  
 資料庫:Google Sheets  
 
-
-
-
 [DEMO網頁](https://dean9703111.github.io/customer_feedback_form/index.html)  
-
+[Google Form](https://docs.google.com/forms/d/e/1FAIpQLSeijRuLDQE62gbapDYgd_3pbmg7GyWY1CWPVeaEK-TiLDKzPw/viewform)  
+[Google Sheets](https://docs.google.com/spreadsheets/d/1aZyvHnajaVjdNBaUT1Md-Y9nYW8O_rdPnMmN5WFrdO4/edit#gid=306480188)  
 
 參考資源：  
 [Bootstrap form templete](https://colorlib.com/wp/template/contact-form-v17/)  
 [Bootstrap thank you page](https://codepen.io/JacobLett/pen/vyegPV)  
-[Create websites using Google Forms](https://hackernoon.com/ create-websites-using-google-forms-49a19cc8beb8)  
+[Create websites using Google Forms](https://hackernoon.com/create-websites-using-google-forms-49a19cc8beb8)  
