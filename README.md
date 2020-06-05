@@ -7,6 +7,8 @@
 後端:Google Form  
 資料庫:Google Sheets  
 
+[歡迎看medium文章了解實作細節喔](https://medium.com/@babydragon9703111/%E5%AB%8Cgoogle-form%E5%A4%AA%E9%86%9C-%E9%82%A3%E5%B0%B1%E6%8A%8A%E4%BB%96%E7%95%B6%E5%BE%8C%E5%8F%B0%E5%90%A7xd-2b8a42d8b2ba)
+
 [DEMO網頁](https://dean9703111.github.io/customer_feedback_form/index.html)  
 [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSeijRuLDQE62gbapDYgd_3pbmg7GyWY1CWPVeaEK-TiLDKzPw/viewform)  
 [Google Sheets](https://docs.google.com/spreadsheets/d/1aZyvHnajaVjdNBaUT1Md-Y9nYW8O_rdPnMmN5WFrdO4/edit#gid=306480188)  
