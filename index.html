@@ -2,188 +2,183 @@
 <html lang="en">
 
 <head>
-	<title>餐後回饋</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico" />
-	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
-	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
-	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
-	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<!--===============================================================================================-->
+  <title>餐後回饋</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--===============================================================================================-->
+  <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="css/util.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <!--===============================================================================================-->
 </head>
 
 <body>
 
 
-	<div class="container-contact100">
-		<div class="wrap-contact100">
-			<form id="google-form" class="contact100-form validate-form"
-				action="https://docs.google.com/forms/d/e/1FAIpQLSeijRuLDQE62gbapDYgd_3pbmg7GyWY1CWPVeaEK-TiLDKzPw/formResponse"
-				method="POST" id="contact_form">
-				<span class="contact100-form-title">
-					餐後回饋
-				</span>
+  <div class="container-contact100">
+    <div class="wrap-contact100">
+      <form id="google-form" class="contact100-form validate-form">
+        <span class="contact100-form-title">
+          餐後回饋
+        </span>
 
-				<label class="label-input100" for="first-name">姓名 *</label>
-				<div class="wrap-input100 validate-input" data-validate="姓名為必填">
-					<input id="name" class="input100" type="text" name="entry.2040133429" placeholder="王大明">
-					<span class="focus-input100"></span>
-				</div>
+        <label class="label-input100" for="first-name">姓名 *</label>
+        <div class="wrap-input100 validate-input" data-validate="姓名為必填">
+          <input id="name" class="input100" type="text" placeholder="王大明">
+          <span class="focus-input100"></span>
+        </div>
 
-				<label class="label-input100" for="email">email</label>
-				<div class="wrap-input100">
-					<input id="email" class="input100" type="text" name="entry.304089069"
-						placeholder="Eg. example@email.com">
-					<span class="focus-input100"></span>
-				</div>
+        <label class="label-input100" for="email">email</label>
+        <div class="wrap-input100">
+          <input id="email" class="input100" type="text" placeholder="Eg. example@email.com">
+          <span class="focus-input100"></span>
+        </div>
 
-				<label class="label-input100" for="email">評分(最高五分) *</label>
-				<div class="wrap-input100 validate-input" data-validate="煩請評分">
-					<select class="form-control" id="score" style="border: 0px;" name="entry.207113062">
-						<option>1</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-						<option>5</option>
-					</select>
-				</div>
+        <label class="label-input100" for="email">評分(最高五分) *</label>
+        <div class="wrap-input100 validate-input" data-validate="煩請評分">
+          <select class="form-control" id="score" style="border: 0px;">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
 
-				<label class="label-input100" for="message">您的建議</label>
-				<div class="wrap-input100" data-validate="Message is required">
-					<textarea id="message" class="input100" name="entry.1310220291"
-						placeholder="Write us a message"></textarea>
-					<span class="focus-input100"></span>
-				</div>
+        <label class="label-input100" for="message">您的建議</label>
+        <div class="wrap-input100" data-validate="Message is required">
+          <textarea id="message" class="input100" placeholder="Write us a message"></textarea>
+          <span class="focus-input100"></span>
+        </div>
 
-				<div class="container-contact100-form-btn">
-					<button class="contact100-form-btn">
-						送出
-					</button>
-				</div>
-			</form>
+        <div class="container-contact100-form-btn">
+          <button class="contact100-form-btn">
+            送出
+          </button>
+        </div>
+      </form>
 
-			<div class="contact100-more flex-col-c-m" style="background-image: url('images/bg-01.jpg');">
-				<div class="flex-w size1 p-b-47">
-					<div class="txt1 p-r-25">
-						<span class="lnr lnr-map-marker"></span>
-					</div>
+      <div class="contact100-more flex-col-c-m" style="background-image: url('images/bg-01.jpg');">
+        <div class="flex-w size1 p-b-47">
+          <div class="txt1 p-r-25">
+            <span class="lnr lnr-map-marker"></span>
+          </div>
 
-					<div class="flex-col size2">
-						<span class="txt1 p-b-20">
-							地址
-						</span>
+          <div class="flex-col size2">
+            <span class="txt1 p-b-20">
+              地址
+            </span>
 
-						<span class="txt2">
-							台北市最好吃的中華一番料理
-						</span>
-					</div>
-				</div>
+            <span class="txt2">
+              台北市最好吃的中華一番料理
+            </span>
+          </div>
+        </div>
 
-				<div class="dis-flex size1 p-b-47">
-					<div class="txt1 p-r-25">
-						<span class="lnr lnr-phone-handset"></span>
-					</div>
+        <div class="dis-flex size1 p-b-47">
+          <div class="txt1 p-r-25">
+            <span class="lnr lnr-phone-handset"></span>
+          </div>
 
-					<div class="flex-col size2">
-						<span class="txt1 p-b-20">
-							電話
-						</span>
+          <div class="flex-col size2">
+            <span class="txt1 p-b-20">
+              電話
+            </span>
 
-						<span class="txt3">
-							<a href="tel:+886-2-0223456789">02 2345 6789</a>
-						</span>
-					</div>
-				</div>
+            <span class="txt3">
+              <a href="tel:+886-2-0223456789">02 2345 6789</a>
+            </span>
+          </div>
+        </div>
 
-				<div class="dis-flex size1 p-b-47">
-					<div class="txt1 p-r-25">
-						<span class="lnr lnr-envelope"></span>
-					</div>
+        <div class="dis-flex size1 p-b-47">
+          <div class="txt1 p-r-25">
+            <span class="lnr lnr-envelope"></span>
+          </div>
 
-					<div class="flex-col size2">
-						<span class="txt1 p-b-20">
-							聯絡我們
-						</span>
+          <div class="flex-col size2">
+            <span class="txt1 p-b-20">
+              聯絡我們
+            </span>
 
-						<span class="txt3">
-							baobaonevertell@email.com
-						</span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+            <span class="txt3">
+              baobaonevertell@email.com
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
-	<div id="dropDownSelect1"></div>
+  <div id="dropDownSelect1"></div>
 
-	<!--===============================================================================================-->
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-	<!--===============================================================================================-->
-	<script src="vendor/animsition/js/animsition.min.js"></script>
-	<!--===============================================================================================-->
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-	<!--===============================================================================================-->
-	<script src="vendor/select2/select2.min.js"></script>
-	<script>
-		$(".selection-2").select2({
-			minimumResultsForSearch: 20,
-			dropdownParent: $('#dropDownSelect1')
-		});
-	</script>
-	<!--===============================================================================================-->
-	<script src="vendor/daterangepicker/moment.min.js"></script>
-	<script src="vendor/daterangepicker/daterangepicker.js"></script>
-	<!--===============================================================================================-->
-	<script src="vendor/countdowntime/countdowntime.js"></script>
-	<!--===============================================================================================-->
-	<script src="js/main.js"></script>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-	<script>
-		$('#google-form').submit(function (e) {
-			e.preventDefault();
-			console.log('yes')
-			$.ajax({
-				url: "https://docs.google.com/forms/d/e/1FAIpQLSeijRuLDQE62gbapDYgd_3pbmg7GyWY1CWPVeaEK-TiLDKzPw/formResponse",
-				crossDomain: true,
-				data: {
-					"entry.2040133429": $('#name').val(),
-					"entry.304089069": $('#email').val(),
-					"entry.207113062": $('#score').val(),
-					"entry.1310220291": $('#message').val()
-				},
-				type: "POST",
-				dataType: "JSONP",
-				complete: function () {
-					$('#name').val('')
-					$('#email').val('')
-					$('#score').val('')
-					$('#message').val('')
-					window.location.replace("thank.html");
-				}
-			});
-		});
-	</script>
+  <!--===============================================================================================-->
+  <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+  <!--===============================================================================================-->
+  <script src="vendor/animsition/js/animsition.min.js"></script>
+  <!--===============================================================================================-->
+  <script src="vendor/bootstrap/js/popper.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <!--===============================================================================================-->
+  <script src="vendor/select2/select2.min.js"></script>
+  <script>
+    $(".selection-2").select2({
+      minimumResultsForSearch: 20,
+      dropdownParent: $('#dropDownSelect1')
+    });
+  </script>
+  <!--===============================================================================================-->
+  <script src="vendor/daterangepicker/moment.min.js"></script>
+  <script src="vendor/daterangepicker/daterangepicker.js"></script>
+  <!--===============================================================================================-->
+  <script src="vendor/countdowntime/countdowntime.js"></script>
+  <!--===============================================================================================-->
+  <script src="js/main.js"></script>
+  <script>
+    $('#google-form').submit(function (e) {
+      e.preventDefault();
+      if ($('#name').val() && $('#score').val()) {
+        $.ajax({
+          url: "https://docs.google.com/forms/d/e/1FAIpQLSeijRuLDQE62gbapDYgd_3pbmg7GyWY1CWPVeaEK-TiLDKzPw/formResponse",
+          crossDomain: true,
+          data: {
+            "entry.2040133429": $('#name').val(),
+            "entry.304089069": $('#email').val(),
+            "entry.207113062": $('#score').val(),
+            "entry.1310220291": $('#message').val()
+          },
+          type: "POST",
+          dataType: "JSONP",
+          complete: function () {
+            $('#name').val('')
+            $('#email').val('')
+            $('#score').val('')
+            $('#message').val('')
+            window.location.replace("thank.html");
+          }
+        });
+      }
+    });
+  </script>
 </body>
 
 </html>
